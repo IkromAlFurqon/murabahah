@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+    <title>IICYMS 2023 - Murabahah</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="" class="logo">IICYMS</a>
+            <div class="space"></div>
+            <div class="nav-item-container">
+                <a href="" class="nav-item">Home</a>
+                <div class="underline"></div>
+            </div>
+            <div class="nav-item-container">
+                <a href="" class="nav-item">Murabahah</a>
+                <div class="underline"></div>
+            </div>
+            <div class="nav-item-container">
+                <a href="" class="nav-item">Musyarakah</a>
+                <div class="underline"></div>
+            </div>
+            <div class="nav-item-container">
+                <a href="" class="nav-item">Mudharabah</a>
+                <div class="underline"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-section">
+        <div class="hero-section-container">
+            <h1>Shariah-compliant Financing Calculator</h1>
+            <h2>Murabahah Calculator</h2>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="content-section">
+        <div class="content-section-container">
+            <h1>What is Murabahah?</h1>
+            <p>Murabahah is a Shariah financing principle based on a sales transaction. In a murabahah transaction, the customer approaches the bank to acquire goods, such as a specific product or asset. The bank then purchases the goods from a third-party supplier on behalf of the customer and sells them to the customer at an agreed mark-up, which represents the bank's profit margin. The cost of acquiring the goods and the agreed-upon profit margin are communicated by the bank to the customer, and the total cost is typically paid by the customer to the bank in installments, either immediately or deferred over a specified period of time. Since interest is prohibited in Islamic finance, the bank earns profit through the mark-up on the cost of the goods or assets, which is agreed upon in advance between the customer and the bank.</p>
+            <br><hr>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="content-section">
+        <div class="content-section-container">
+            <h1>What is Murabahah's Benefit?</h1>
+            <ol>
+                <li>The profit is known and determined clearly at the beginning of the transaction and is the result of an agreement between both parties.</li>
+                <li>The margin is fixed.</li>
+                <li>There is no element of usury.</li>
+            </ol>
+            <br><hr>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="content-section">
+        <div class="content-section-container">
+            <h1>Product of Murabahah</h1>
+            <ol>
+                <li>Goods Financing: Any goods that the customer wants to purchase</li>
+                <li>Vehicle Financing: Cars, Motorcycles</li>
+                <li>Property Financing: Houses</li>
+            </ol>
+            <br><hr>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="content-section">
+        <div class="content-section-container">
+            <h1>Simulation of Murabahah Calculation Methods</h1>
+            <br><br>
+            <div class="calculator-container">
+                <div class="calculator-input-container">
+                    <h1>Input Forms</h1>
+                    <div class="input-container">
+                        <label for="price">Purchase Price From Seller</label>
+                        <input type="number" name="price" id="price">
+                    </div>
+                    <div class="input-container">
+                        <label for="discount">Discount From Seller</label>
+                        <input type="number" name="discount" id="discount">
+                    </div>
+                    <div class="input-container">
+                        <label for="administration">Administration Fee</label>
+                        <input type="number" name="administration" id="administration">
+                    </div>
+                    <div class="input-container">
+                        <label for="margin">Seller's Profit Margin</label>
+                        <input type="number" name="margin" id="margin">
+                    </div>
+                    <div class="input-container">
+                        <label for="dp">Down Payment</label>
+                        <input type="number" name="dp" id="dp">
+                    </div>
+                    <div class="input-container">
+                        <label for="duration">Loan Duration</label>
+                        <input type="number" name="duration" id="duration">
+                    </div>
+                    <div class="input-container">
+                        <div id="input-button">Calculate!</div>
+                    </div>
+                </div>
+                <div class="calculator-output-container">
+                    <div class="general-output-container">
+                        <div class="general-output-column">
+                            <div class="general-output">
+                                <h1>Selling Price From the Seller</h1>
+                                <h2 id="finalPrice-container"></h2>
+                            </div>
+                            <div class="general-output">
+                                <h1>The amount of installment per month</h1>
+                                <h2 id="monthlyInstallment-container"></h2>
+                            </div>
+                        </div>
+                        <div class="general-output-column">
+                            <div class="general-output">
+                                <h1>Installment to pay the loan per month</h1>
+                                <h2 id="primaryLoan-container"></h2>
+                            </div>
+                            <div class="general-output">
+                                <h1>Installment to pay margin per month</h1>
+                                <h2 id="loanMargin-container"></h2>
+                            </div>                            
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="table-container">
+                        <h1>Your Output's Table Details will Display Here</h1>
+                        <table id="murabahah-table">
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <p class="note">Notes:</p>
+            <p class="note">This calculator is made to make it easier for you to calculate your loan. The calculation provided is an approximate estimation of the financing installments, based on a fixed margin rate in percentage (%). Please remind that the computation might change based on the lending institution, the loan amount, the repayment period, the allocation of proportions, and the method used. Remember that this is only an estimate, and the real installments may vary from the computation given. However, this calculation provides a useful tool for borrowers to get a general idea of the financing costs and make an informed decision when choosing a financing option.</p>
+            <p class="note"></p>
+            <br><hr>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+</html>
