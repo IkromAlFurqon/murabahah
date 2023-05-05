@@ -9,6 +9,9 @@ font-family: 'Aref Ruqaa', serif; */
 }
 /* ===== CSS Reset End ===== */
 
+body {
+    min-width: 1920px;
+}
 
 /* ===== NavBar Start ===== */
 nav {
