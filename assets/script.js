@@ -65,8 +65,6 @@ inputButton.addEventListener("click", function() {
 
     murabahahTable.appendChild(tableRow)
 
-
-
     finalPrice = finalPrice - DP
 
     for (let n = 1; n <= D; n++) {

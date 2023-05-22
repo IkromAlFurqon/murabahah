@@ -27,7 +27,7 @@ nav {
     margin: 0 auto;
     /* background-color: antiquewhite; */
     display: grid;
-    grid-template-columns: max-content auto max-content max-content max-content max-content;
+    grid-template-columns: max-content auto max-content max-content max-content max-content max-content;
 }
 .logo {
     padding: 0 15px;
@@ -54,7 +54,7 @@ nav {
     padding: 0 15px;
     line-height: 60px;
     font-family: 'Aref Ruqaa', serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     text-decoration: none;
     color: white;
@@ -80,7 +80,7 @@ nav {
 /* ===== Hero Section Start ===== */
 .hero-section {
     width: 100%;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 .hero-section-container {
     width: 85%;
